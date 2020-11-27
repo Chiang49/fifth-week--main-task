@@ -1,0 +1,53 @@
+
+.mainNav{
+    width: 296px;
+    min-height: 100vh;
+    color: #000;
+    background: $primary;
+    padding: 32px;
+}
+
+.nav-item{
+    color: #000;
+    position: relative;
+    &:hover{
+        color: $secondary;
+    }
+    &:hover::before{
+        content: "";
+        width: 4px;
+        height: 100%;
+        background: $secondary;
+        position: absolute;
+        left: -32px;
+        bottom: 0px;
+    }
+}
+
+.user-photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user-name{
+    font-weight: $fontWeight-Bold;
+}
+
+.user-email{
+    font-size: $fontSize-sm;
+    color: #0000009A;
+}
+
+.active{
+    color: $secondary;
+    &::before{
+        content: "";
+        width: 4px;
+        height: 100%;
+        background: $secondary;
+        position: absolute;
+        left: -32px;
+        bottom: 0px;
+    }
+}

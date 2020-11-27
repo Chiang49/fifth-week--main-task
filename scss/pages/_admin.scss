@@ -1,0 +1,40 @@
+
+.table-style{
+    width: 100%;
+    text-align: left;
+
+    .borderHead{
+        border-bottom: 1px solid #000;
+    }
+
+    .tableTitle{
+        font-weight: $fontWeight-Bold;
+        > a{
+            color: #000;
+        }
+    }
+
+    .table{
+        tr{
+            border-bottom: 1px solid $darkprimary;
+            &:hover{
+                background: $primary;
+            }
+        }
+        th,td{
+            vertical-align: top;
+            padding: 16px 0;
+        }
+    }
+}
+
+
+
+.icon-sm-secondary{
+    font-size: $fontSize-xs;
+    font-weight: $fontWeight-Bold;
+    color: $secondary;
+}
+
+
+

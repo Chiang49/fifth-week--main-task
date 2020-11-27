@@ -1,0 +1,27 @@
+
+
+
+.formBlock{
+    border-bottom: 1px solid $darkprimary;
+}
+
+.modal-title{
+    font-size: $fontSize-lg;
+    font-weight: $fontWeight-Bold;
+}
+
+.form-title{
+    font-size: $fontSize-md;
+    font-weight: $fontWeight-Bold;
+}
+
+.textBox-style{
+    color: #000;
+    background: $primary;
+    border: none;
+}
+
+.selectBox-style{
+    width: 100%;
+    padding: 16px;
+}

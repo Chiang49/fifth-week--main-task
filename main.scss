@@ -1,0 +1,21 @@
+@import './scss/abstracts/variable';
+
+@import './scss/base/rest';
+@import './scss/base/typography';
+@import './scss/abstracts/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap');
+
+@import './scss/layout/sideNav';
+@import './scss/layout/base';
+@import './scss/layout/header';
+
+@import './scss/modules/pagition';
+@import './scss/modules/modal';
+@import './scss/modules/modal-prsonal';
+@import './scss/modules/modal-edit';
+@import './scss/modules/btn-style';
+@import './scss/modules/icon-style';
+
+
+@import './scss/pages/assignment';
+@import './scss/pages/admin';

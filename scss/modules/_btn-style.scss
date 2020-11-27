@@ -1,0 +1,53 @@
+
+.btn-clear{
+    border: none;
+    background: none;
+}
+
+.btn{
+    color: $secondary;
+    border: 1px solid $secondary;
+    padding: 8px 32px;
+    border-radius: 4px;
+    &:hover{
+        box-shadow: 2px 2px 5px #000;
+        transition: 0.5s;
+    }
+}
+
+.btn-lg{
+    width: 100%;
+    color: $secondary;
+    background: none;
+    padding: 16px 0;
+    border: 1px solid $secondary;
+    &:hover{
+        color: #fff;
+        background: $secondary;
+        transition: 0.8s;
+    }
+}
+
+.btn-secondary{
+    color: #fff;
+    background: $secondary;
+    &:hover{
+        box-shadow: 2px 2px 5px #000;
+       
+    }
+}
+
+.btn-warning{
+    color: $warning;
+    border: 1px solid $warning;
+    &:hover{
+        color: #fff;
+        background: $warning;
+        transition: 0.8s;
+    }
+}
+
+.btn-disabled{
+    color: $darkprimary;
+    border: 1px solid $darkprimary;
+}

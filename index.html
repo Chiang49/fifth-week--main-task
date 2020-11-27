@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="./css/style/main.css">
+</head>
+<body>
+    
+    <div class="h-100 d-flex">
+
+        <!-- 側邊主要選單 -->
+        <div class="mainNav d-flex flex-column justify-content-between">
+            <nav clss="menu">
+                <!-- logo -->
+                <h1 class="mb-8">
+                    <a href="#">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/week5/logo-ANSWER.svg" alt="Logo">
+                    </a>
+                </h1>
+
+                <!-- 主選單 -->
+                <ul>
+                    <li class="mb-7">
+                        <a class="nav-item d-flex" href="#">
+                            <span class="material-icons mr-4">
+                                assessment
+                            </span>
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li class="mb-7">
+                        <a class="nav-item d-flex" href="#">
+                            <span class="material-icons mr-4">
+                                question_answer
+                            </span>
+                            <p>Question</p>
+                        </a>
+                    </li>
+                    <li class="mb-7">
+                        <a  class="nav-item active d-flex" href="#">
+                            <span class="material-icons mr-4">
+                                assignment
+                            </span>
+                            <p>Assignment</p>
+                        </a>
+                    </li>
+                    <li class="mb-7">
+                        <a class="nav-item d-flex" href="#">
+                            <span class="material-icons mr-4">
+                                video_library
+                            </span>
+                            <p>Course</p>
+                        </a>
+                    </li>
+                    <li class="mb-7">
+                        <a class="nav-item d-flex" href="./admin.html">
+                            <span class="material-icons mr-4">
+                                supervisor_account
+                            </span>
+                            <p>Admin</p>
+                        </a>
+                    </li>
+                    <li class="mb-7">
+                        <a class="nav-item d-flex" href="#">
+                            <span class="material-icons mr-4">
+                                settings
+                            </span>
+                            <p>Settings</p>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <!-- 使用者 -->
+            <div class="user d-flex align-items-center">
+                <img class="user-photo mr-4" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="user-photo">
+                <div>
+                    <p class="user-name mb-1">
+                        Andy Chen
+                    </p>
+                    <p class="user-email">
+                        andy0401@mail.com
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 主要內容 -->
+        <main>
+
+            <!-- header區 -->
+            <header class="py-8 mb-3">
+                <div class="container d-flex justify-content-between align-items-end">
+
+                    <div class="d-flex align-items-end">
+                        <h2 class="pageName mr-11">Assignment</h2>
+                        <a class="d-flex align-items-center" href="">
+                            <p class="menu mr-2">All Courses</p>
+                            <span class="material-icons icon-secondary">
+                                keyboard_arrow_down
+                            </span>
+                        </a>
+                    </div>
+
+                    <ul class="accessibility d-flex">
+                        <li class="mr-6">
+                            <a href="#">
+                                <span class="material-icons">
+                                    search
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons">
+                                    notifications_active
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <!-- 表格上資訊 -->
+            <div class="container mb-2 d-flex justify-content-between">
+
+                <a class="d-flex align-items-end" href="#">
+                    <p class="menu mr-2">All (4)</p>
+                    <span class="material-icons icon-secondary">
+                        keyboard_arrow_down
+                    </span>
+                </a>
+                <p class="comments">2 comments</p>
+                
+            </div>
+
+            <!-- 內容 -->
+            <div class="container d-flex justify-content-between align-items-start">
+                <!-- 主旨 -->
+                <div class="assignment">
+                    <ul>
+                        <li class="assignment-item active">
+                            <a class="p-3" href="#">
+                                <div class="mb-1 d-flex justify-content-between">
+                                    <p class="assignment-title">Chapter Assignment 2</p>
+                                    <p class="tiem">4 hrs ago</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="assignment-text">Please check this file…</p>
+                                    <p class="posted-name">Emily Wang</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="assignment-item">
+                            <a class="p-3" href="#">
+                                <div class="mb-1 d-flex justify-content-between">
+                                    <p class="assignment-title">Chapter Assignment 1</p>
+                                    <p class="tiem">12 hrs ago</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="assignment-text">My Homework</p>
+                                    <p class="posted-name">David Xu</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="assignment-item">
+                            <a class="p-3" href="#">
+                                <div class="mb-1 d-flex justify-content-between">
+                                    <p class="assignment-title">Final Assignment</p>
+                                    <p class="tiem">18 hrs ago</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="assignment-text">Have a problem with this…</p>
+                                    <p class="posted-name">Tony Wei</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="assignment-item">
+                            <a class="p-3" href="#">
+                                <div class="mb-1 d-flex justify-content-between">
+                                    <p class="assignment-title">Final Assignment</p>
+                                    <p class="tiem">19 hrs ago</p>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <p class="assignment-text">Did I do it right?</p>
+                                    <p class="posted-name">Christina Lin</p>
+                                </div>
+                            </a>
+                        </li>
+                     
+                    </ul>
+                </div>
+
+                <!-- 主旨內容 -->
+                <div class="assignment-content">
+        
+                    <div class="content-title px-4 py-3 d-flex justify-content-between align-items-center">
+                        <div>
+                            <p class="assignment-title">Chapter Assignment 2 / HTML&CSS</p>
+                            <p class="assignment-text">Please check this file for me, thanks!</p>
+                        </div>
+                        <a href="#">
+                            <span class="material-icons">
+                                more_vert
+                            </span>
+                        </a>
+                    </div>
+
+                   <ul class="p-4 mb-4 border-darkprimary">
+                       <li class="d-flex mb-4">
+                            <img class="user-photo mr-2" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true" alt="emilywang-photo">
+                            <div class="text-block mr-4">
+                                <p class="name">Emily Wang</p>
+                                <p class="tiem mb-4">10:38 AM (4 hours ago)</p>
+
+                                <p class="content-text mb-4">
+                                    Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the div is bigger than the height of the img ? There is a gap below the image, but it doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+                                </p>
+
+                                <a class="attach_file px-3 py-2 mb-4 d-flex" href="#">
+                                    <span class="material-icons mr-2">
+                                        attach_file
+                                    </span>
+                                    <p>HW-2-David.zip</p>
+                                </a>
+                            </div>
+                       </li>
+
+                       <li class="d-flex">
+                            <img class="user-photo mr-2" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="emilywang-photo">
+                            <div class="mr-4">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <p class="name">Andy Chen (You)</p>
+                                        <p class="tiem mb-4">13:24 AM (1 hours ago)</p>
+                                    </div>
+                                    <ul class="d-flex">
+                                        <li class="mr-6">
+                                            <a href="#">
+                                                <span class="material-icons">
+                                                    star_border
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="material-icons">
+                                                    edit
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="content-text mb-4">
+                                    <p>Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.<br>
+                                        <br>
+                                        <br>
+                                        You can:
+                                        <br>
+                                        <br>
+                                    </p>
+                                    <ul>
+                                        <li class="list-style">adjust the vertical-align of the image to position it elsewhere (e.g. the middle )</li>
+                                        <li class="list-style">change the display so it isn’t inline.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                   </ul>
+                    
+                    <!-- 控制與回覆 -->
+                    <div class="mb-8 d-flex justify-content-between align-items-center">
+                        <!-- 控制上下頁 -->
+                        <ul class="d-flex">
+                            <li class="mr-6">
+                                <a href="#">
+                                    <span class="material-icons">
+                                        keyboard_arrow_left
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="material-icons">
+                                        keyboard_arrow_right
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- 回覆 -->
+                        <ul class="d-flex">
+                            <li class="mr-4">
+                                <a class="btn" href="#">Mark as read</a>
+                            </li>
+                            <li>
+                                <a class="openReply btn btn-secondary" href="#replyBtn">Reply</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                     <!-- 回覆視窗 -->
+                     <div class="replyWindows mb-8">
+                        <ul class="tool-Tabel py-4 d-flex align-items-center">
+                            <li class="mx-6">
+                                <a class="d-flex align-items-center" href="#">
+                                    <p class="body-text mr-1">Body Text</p>
+                                    <span class="material-icons">
+                                        arrow_drop_down
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a href="#">
+                                    <span class="material-icons">
+                                        format_bold
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a href="#">
+                                    <span class="material-icons">
+                                        format_italic
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a href="#">
+                                    <span class="material-icons">
+                                        format_list_bulleted
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a href="#">
+                                    <span class="material-icons">
+                                        format_list_numbered
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a href="#">
+                                    <span class="material-icons">
+                                        insert_photo
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a href="#">
+                                    <span class="material-icons">
+                                        insert_link
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="material-icons">
+                                        code
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <form action="#">
+                            <textarea class="reply-center" name="reply" id="reply" placeholder="Reply an answer…"></textarea>
+                        </form>
+                        <ul class="my-4 mr-6 d-flex justify-content-end">
+                            <li class="mr-2">
+                                <a class="cancelBtn btn" href="#replyBtn">
+                                    Cancel
+                                </a>
+                            </li>
+                            <li>
+                                <a id="replyBtn" class="btn btn-secondary" href="#replyBtn">
+                                    Reply
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </main>
+
+    </div>
+
+    
+    <script src="./js/jquery3.5.1.min.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

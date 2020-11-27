@@ -1,0 +1,42 @@
+
+
+
+.prsonal-photo{
+    width: 141px;
+    height: 141px;
+    > img{
+        height: 100%;
+    }
+}
+
+.information{
+    width: 251px;
+    &-name{
+        font-size: $fontSize-lg;
+        font-weight: $fontWeight-Bold;
+        line-height: 29px;
+    }
+    &-email{
+        font-size: $fontSize-sm;
+        color: #0000009A;
+    }
+    &-everified{
+        font-size: $fontSize-sm;
+    }
+}
+.delete-block{
+    display: none;
+}
+
+.add-transform{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.add-reTransform{
+    transform: rotate(-180deg);
+    transition: 0.5s;
+}
+
+
+
