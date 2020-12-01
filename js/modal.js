@@ -24,7 +24,7 @@ $('document').ready(function(e){
         $('.delete-block').slideToggle();
     })
     $('.editBtn').click(function(){
-        $('.modal').fadeOut();
+        $('#modal-edit').show();
     })
 
     //編輯資料

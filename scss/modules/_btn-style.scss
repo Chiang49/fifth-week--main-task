@@ -1,4 +1,16 @@
 
+.attach_file{
+    width: 176px;
+    color:#000;
+    font-weight: $fontWeight-Bold;
+    border: 1px solid $darkprimary;
+    background: $lightprimary;
+    &:hover{
+        box-shadow: 2px 2px 5px #000;
+        transition: 0.5s;
+    }
+}
+
 .btn-clear{
     border: none;
     background: none;

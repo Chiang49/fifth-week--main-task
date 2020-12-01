@@ -7,12 +7,25 @@
     padding: 32px;
 }
 
+.logo{
+    height: 40px;
+    background: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/week5/logo-ANSWER.svg') no-repeat left;
+    text-indent: -101%;
+    overflow: hidden;
+}
+
+.nav-hover{
+    &:hover{
+        .material-icons, p{
+            color: $secondary;
+            transition: 0.8s;
+        }
+    }
+}
+
 .nav-item{
     color: #000;
     position: relative;
-    &:hover{
-        color: $secondary;
-    }
     &:hover::before{
         content: "";
         width: 4px;
@@ -28,6 +41,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    object-fit: cover;//可避免圖片變形
 }
 
 .user-name{
@@ -37,10 +51,15 @@
 .user-email{
     font-size: $fontSize-sm;
     color: #0000009A;
+    &:hover{
+        text-decoration: underline;
+    }
 }
 
 .active{
-    color: $secondary;
+    .material-icons, p{
+        color: $secondary;
+    }
     &::before{
         content: "";
         width: 4px;

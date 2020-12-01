@@ -1,10 +1,4 @@
 
-//此檔案變數要用在"網頁的架構"上
-
-.h-100{
-    height: 100%;
-}
-
 //字形大小
 .fz-sm{
     font-size: $fontSize-sm;
@@ -18,6 +12,11 @@
 //字形顏色
 .fz-warning{
     color: $warning;
+}
+
+//position
+.position-re{
+    position: relative;
 }
 
 // padding-top(spacing-1:4)

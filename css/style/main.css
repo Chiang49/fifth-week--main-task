@@ -54,10 +54,13 @@ html {
 }
 
 body {
-  min-height: 100vh;
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+}
+
+main {
+  width: 76.875%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,12 +80,9 @@ a {
 }
 
 .container {
-  width: 93.3%;
+  max-width: 984px;
+  padding: 0 32px;
   margin: 0 auto;
-}
-
-.h-100 {
-  height: 100%;
 }
 
 .fz-sm {
@@ -95,6 +95,10 @@ a {
 
 .fz-warning {
   color: #E3006E;
+}
+
+.position-re {
+  position: relative;
 }
 
 .pt-1 {
@@ -472,13 +476,22 @@ a {
   padding: 32px;
 }
 
+.logo {
+  height: 40px;
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/week5/logo-ANSWER.svg") no-repeat left;
+  text-indent: -101%;
+  overflow: hidden;
+}
+
+.nav-hover:hover .material-icons, .nav-hover:hover p {
+  color: #2A8356;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
 .nav-item {
   color: #000;
   position: relative;
-}
-
-.nav-item:hover {
-  color: #2A8356;
 }
 
 .nav-item:hover::before {
@@ -495,6 +508,8 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .user-name {
@@ -506,7 +521,11 @@ a {
   color: #0000009A;
 }
 
-.active {
+.user-email:hover {
+  text-decoration: underline;
+}
+
+.active .material-icons, .active p {
   color: #2A8356;
 }
 
@@ -520,22 +539,8 @@ a {
   bottom: 0px;
 }
 
-.position-re {
-  position: relative;
-}
-
-main {
-  width: 76.875%;
-}
-
 .pageName {
   font-size: 24px;
-  font-weight: 700;
-}
-
-.menu {
-  color: #000;
-  font-size: 16px;
   font-weight: 700;
 }
 
@@ -609,6 +614,8 @@ main {
 
 .prsonal-photo > img {
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .information {
@@ -673,6 +680,21 @@ main {
   padding: 16px;
 }
 
+.attach_file {
+  width: 176px;
+  color: #000;
+  font-weight: 700;
+  border: 1px solid #CDDDCD;
+  background: #EDF4EE;
+}
+
+.attach_file:hover {
+  -webkit-box-shadow: 2px 2px 5px #000;
+          box-shadow: 2px 2px 5px #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .btn-clear {
   border: none;
   background: none;
@@ -734,12 +756,26 @@ main {
   border: 1px solid #CDDDCD;
 }
 
+.material-icons:hover {
+  color: #2A8356;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
 .icon-secondary {
   color: #2A8356;
 }
 
 .icon-warning {
   color: #E3006E;
+}
+
+.select-style {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
 }
 
 .assignment {
@@ -805,14 +841,6 @@ main {
 
 .assignment-content .content-text {
   font-size: 14px;
-}
-
-.assignment-content .attach_file {
-  width: 176px;
-  color: #000;
-  font-weight: 700;
-  border: 1px solid #CDDDCD;
-  background: #EDF4EE;
 }
 
 .assignment-content .text-block {

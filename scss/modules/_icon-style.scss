@@ -1,4 +1,10 @@
 
+.material-icons{
+    &:hover{
+        color: $secondary;
+        transition: 0.6s;
+    }
+}
 
 .icon-secondary{
     color: $secondary;

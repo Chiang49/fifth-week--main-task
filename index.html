@@ -10,21 +10,19 @@
 </head>
 <body>
     
-    <div class="h-100 d-flex">
+    <div class="d-flex">
 
         <!-- 側邊主要選單 -->
         <div class="mainNav d-flex flex-column justify-content-between">
             <nav clss="menu">
                 <!-- logo -->
                 <h1 class="mb-8">
-                    <a href="#">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/week5/logo-ANSWER.svg" alt="Logo">
-                    </a>
+                    <a class="logo" href="#">ANSWER</a>
                 </h1>
 
                 <!-- 主選單 -->
                 <ul>
-                    <li class="mb-7">
+                    <li class="nav-hover mb-7">
                         <a class="nav-item d-flex" href="#">
                             <span class="material-icons mr-4">
                                 assessment
@@ -32,7 +30,7 @@
                             <p>Dashboard</p>
                         </a>
                     </li>
-                    <li class="mb-7">
+                    <li class="nav-hover mb-7">
                         <a class="nav-item d-flex" href="#">
                             <span class="material-icons mr-4">
                                 question_answer
@@ -40,7 +38,7 @@
                             <p>Question</p>
                         </a>
                     </li>
-                    <li class="mb-7">
+                    <li class="nav-hover mb-7">
                         <a  class="nav-item active d-flex" href="#">
                             <span class="material-icons mr-4">
                                 assignment
@@ -48,7 +46,7 @@
                             <p>Assignment</p>
                         </a>
                     </li>
-                    <li class="mb-7">
+                    <li class="nav-hover mb-7">
                         <a class="nav-item d-flex" href="#">
                             <span class="material-icons mr-4">
                                 video_library
@@ -56,7 +54,7 @@
                             <p>Course</p>
                         </a>
                     </li>
-                    <li class="mb-7">
+                    <li class="nav-hover mb-7">
                         <a class="nav-item d-flex" href="./admin.html">
                             <span class="material-icons mr-4">
                                 supervisor_account
@@ -64,7 +62,7 @@
                             <p>Admin</p>
                         </a>
                     </li>
-                    <li class="mb-7">
+                    <li class="nav-hover mb-7">
                         <a class="nav-item d-flex" href="#">
                             <span class="material-icons mr-4">
                                 settings
@@ -83,9 +81,9 @@
                     <p class="user-name mb-1">
                         Andy Chen
                     </p>
-                    <p class="user-email">
+                    <a class="user-email" href="">
                         andy0401@mail.com
-                    </p>
+                    </a>
                 </div>
             </div>
 
@@ -100,12 +98,16 @@
 
                     <div class="d-flex align-items-end">
                         <h2 class="pageName mr-11">Assignment</h2>
-                        <a class="d-flex align-items-center" href="">
-                            <p class="menu mr-2">All Courses</p>
-                            <span class="material-icons icon-secondary">
-                                keyboard_arrow_down
-                            </span>
-                        </a>
+
+                        <form action="#">
+                            <select class="select-style" name="courses" id="courses">
+                                <option value="All Courses">All Courses</option>
+                                <option value="HTML">HTML</option>
+                                <option value="CSS">CSS</option>
+                                <option value="JavaScript">JavaScript</option>
+                            </select>
+                        </form>
+
                     </div>
 
                     <ul class="accessibility d-flex">
@@ -130,12 +132,11 @@
             <!-- 表格上資訊 -->
             <div class="container mb-2 d-flex justify-content-between">
 
-                <a class="d-flex align-items-end" href="#">
-                    <p class="menu mr-2">All (4)</p>
-                    <span class="material-icons icon-secondary">
-                        keyboard_arrow_down
-                    </span>
-                </a>
+                <form action="#">
+                    <select class="select-style" name="courses" id="courses">
+                        <option value="all">All (4)</option>
+                    </select>
+                </form>
                 <p class="comments">2 comments</p>
                 
             </div>
@@ -152,7 +153,7 @@
                                     <p class="tiem">4 hrs ago</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <p class="assignment-text">Please check this file…</p>
+                                    <h3 class="assignment-text">Please check this file…</h3>
                                     <p class="posted-name">Emily Wang</p>
                                 </div>
                             </a>
@@ -164,7 +165,7 @@
                                     <p class="tiem">12 hrs ago</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <p class="assignment-text">My Homework</p>
+                                    <h3 class="assignment-text">My Homework</h3>
                                     <p class="posted-name">David Xu</p>
                                 </div>
                             </a>
@@ -176,7 +177,7 @@
                                     <p class="tiem">18 hrs ago</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <p class="assignment-text">Have a problem with this…</p>
+                                    <h3 class="assignment-text">Have a problem with this…</h3>
                                     <p class="posted-name">Tony Wei</p>
                                 </div>
                             </a>
@@ -188,7 +189,7 @@
                                     <p class="tiem">19 hrs ago</p>
                                 </div>
                                 <div class="d-flex justify-content-between">
-                                    <p class="assignment-text">Did I do it right?</p>
+                                    <h3 class="assignment-text">Did I do it right?</h3>
                                     <p class="posted-name">Christina Lin</p>
                                 </div>
                             </a>
@@ -203,7 +204,7 @@
                     <div class="content-title px-4 py-3 d-flex justify-content-between align-items-center">
                         <div>
                             <p class="assignment-title">Chapter Assignment 2 / HTML&CSS</p>
-                            <p class="assignment-text">Please check this file for me, thanks!</p>
+                            <h3 class="assignment-text">Please check this file for me, thanks!</h3>
                         </div>
                         <a href="#">
                             <span class="material-icons">
