@@ -1,12 +1,14 @@
 # fifth-week--main-task
 
 12/1修改<br>
-共同建議：
-所有 icon 與 a 連結都可增添 hover 效果，優化使用者體驗。
-body 不需設定 min-height: 100vh，.mainNav 使用就可以了，最外層的 div 不需設定 .h-100。
-.container 建議可以參考 Bootstrap 設定 max-width 和 padding，不建議使用 % 表示。
-logo 可使用圖片取代文字技巧。
-.user-photo 建議設定 object-fit: cover，可避免圖片變形。
+共同建議：<br>
+<ol>
+  <li>所有 icon 與 a 連結都可增添 hover 效果，優化使用者體驗。</li>
+  <li>body 不需設定 min-height: 100vh，.mainNav 使用就可以了，最外層的 div 不需設定 .h-100。</li>
+  <li>.container 建議可以參考 Bootstrap 設定 max-width 和 padding，不建議使用 % 表示。</li>
+  <li>logo 可使用圖片取代文字技巧。</li>
+  <li>.user-photo 建議設定 object-fit: cover，可避免圖片變形。</li>
+</ol>
 
 Assignment：
 「∨ All Coursesｍ」、「All(4) ∨」建議用下拉式選單製作。
